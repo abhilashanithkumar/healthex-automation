@@ -1,0 +1,34 @@
+{
+  "name": "healthex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:readonly": "playwright test --grep \"AUTH-01|WALLET-01|RECORDS-0[1-5]|NAV-01|DOWNLOAD-0[12]|SHARING-01\"",
+    "test:print": "playwright test --grep \"PRINT-0[12]\"",
+    "test:list": "playwright test --list --reporter=list",
+    "test:typecheck": "tsc --noEmit",
+    "test:report": "playwright show-report",
+    "auth:open": "tsx scripts/auth-session.ts --open",
+    "auth:save": "tsx scripts/auth-session.ts",
+    "test:sharing": "playwright test tests/sharing",
+    "test:sharing:list": "playwright test tests/sharing --list --reporter=list"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.1.1",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "cheerio": "^1.2.0",
+    "pdfjs-dist": "^6.5.438",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

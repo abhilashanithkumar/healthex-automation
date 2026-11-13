@@ -1,0 +1,16 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Local configuration, credentials, and private health-record artifacts
+.env
+.env.*
+!.env.example
+.playwright-mcp/
+/private-artifacts/
+*.tsbuildinfo
