@@ -2,10 +2,11 @@
 # Playwright
 node_modules/
 /test-results/
-/playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+.codex/
+.github/
 
 # Local configuration, credentials, and private health-record artifacts
 .env
